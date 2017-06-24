@@ -41,12 +41,6 @@ p{
     width: 50%;
     padding: 10px;
 }
-.btn {
-  background-color: #5bc0de;
-  padding: 10px 15px;
-  border: 1px solid #46b8da;
-  border-radius: 5px;
-}
 .text{
   color: white;
   font-size: 20px;
@@ -58,4 +52,8 @@ p{
     color:white;
     border: 3px solid white;
     padding: 10px;
+}
+
+input {
+    width: 100%;
 }
