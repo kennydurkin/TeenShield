@@ -11,15 +11,22 @@ rec_center_info = False
 def hello():
 	return render_template("index.html")
 
+# About page
 @app.route("/about")
 def about():
 	return render_template("about.html")
 
-# Add numbers route
+# Resources route
 @app.route("/resources")
 def resources():
 	return render_template("resources.html")
 
+# Emotional Support route
+@app.route("/emotionalsupport")
+def emotionalsupport():
+	return render_template("emotionalsupport.html")
+
+# Search page (returns nearest rec center)
 @app.route('/find', methods=["GET","POST"])
 def find():
 	if request.method == "POST":
@@ -28,16 +35,19 @@ def find():
 	else: # request.method == "GET"
 		return render_template("find.html")
 
+# List of all rec centers
 @app.route("/centers")
 def centers():
 	rec_center_info = get_rec_center_info()
 	return render_template("rec_centers.html", info=rec_center_info)
 
+# 404 Page
 @app.errorhandler(404)
 def page_not_found(error):
 	rec_center_info = get_rec_center_info()
 	return render_template('404.html', info=rec_center_info), 404
 
+# Helper that finds the nearest rec center to a zipcode
 def find_nearest_center(user_zipcode):
 	rec_centers = get_rec_center_info()
 	partial_zip = str(user_zipcode)[0:4]
@@ -55,6 +65,7 @@ def find_nearest_center(user_zipcode):
 
 	return nearby_rec_centers
 
+# Loads the rec center JSON data
 def get_rec_center_info():
 	global rec_center_info
 	if not rec_center_info:
