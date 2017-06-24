@@ -1,1 +1,17 @@
-This is the about page!!
+{% extends "base.html" %}
+{% block body_content %}
+<div>
+	<h1>Teen Shield New York</h1>
+	<div class="button">
+	  <a href="/about" class="btn btn-info btn-large">About Us</a>
+	  <a href="/resources" class="btn btn-info btn-large">Resources</a>
+	  <a href="/emotionalsupport" class="btn btn-info btn-large">Emotional Support</a>
+	</div>
+	<hr>
+</div>
+<div>
+	<p class="text">
+	Teen shield is about homeless teens, finding shelters, places where homeless teens could wash their close and take places where they could take showers. We are a group of young adults that want to help other teens and young adults in neeed. We give locations of shelters and times they open so young adults don't have to sleep of the streets of New York. Our goal is to help everyone we can with the informations we could provide.
+	</p>
+</div>
+{% endblock %}
