@@ -1,0 +1,9 @@
+{% for rec_center in info %}
+	<h2>{{ rec_center['NAME']}}</h2>
+	<ul>
+		<li>{{ rec_center['NAME']}}</li>
+		<li>{{ rec_center['description']|safe}}</li>
+		<li>{{ rec_center['ADDRESS']}}</li>
+		<li>{{ rec_center['CITY']}}, {{ rec_center['STATE']}} {{ rec_center['ZIP']}}</li>
+	</ul>
+{% endfor %}

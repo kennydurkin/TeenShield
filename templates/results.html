@@ -1,0 +1,16 @@
+{% extends "find.html" %}
+{% block results %}
+<!DOCTYPE html>
+{% if rec_center_results %}
+    <ul>
+    {% for rec_center in rec_center_results %}
+        <li>
+            <h3>{{ rec_center.NAME }}</h3>
+            <p>{{ rec_center.ZIP }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+<p>There are no results near you!</p>
+{% endif %}
+{% endblock %}
