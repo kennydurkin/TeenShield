@@ -16,9 +16,9 @@ def about():
 	return render_template("about.html")
 
 # Add numbers route
-@app.route("/addnumbers/<x>/<y>")
-def add(x,y):
-	return str(int(x)+int(y))
+@app.route("/resources")
+def resources():
+	return render_template("resources.html")
 
 @app.route('/find', methods=["GET","POST"])
 def find():
