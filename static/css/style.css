@@ -1,0 +1,61 @@
+.gradient{
+background: #3500ff; /* Old Browsers */
+background: -webkit-radial-gradient(center,#3500ff,#04083e); /*Safari 5.1-6*/
+background: -o-radial-gradient(center,#3500ff,#04083e); /*Opera 11.1-12*/
+background: -moz-radial-gradient(center,#3500ff,#04083e); /*Fx 3.6-15*/
+background: radial-gradient(ellipse at center, #3500ff, #04083e); /*Standard*/
+}
+h1{
+  color: white;
+  text-align:center;
+  font-family: 'Cinzel', cursive;
+  font-size: 75px;
+}
+h2{
+  color: white;
+  text-align:center;
+  font-family: 'Cinzel', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+h4{
+   color: white;
+  text-align:center;
+  font-family: 'Montserrat', cursive;
+  font-size: 20px;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+p{
+    margin: auto;
+    width: 50%;
+    border: 3px solid white;
+    padding: 10px;
+    color: white;
+    text-align:center;
+}
+.button{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.btn {
+  background-color: #5bc0de;
+  padding: 10px 15px;
+  border: 1px solid #46b8da;
+  border-radius: 5px;
+}
+.text{
+  color: white;
+  font-size: 20px;
+  font-family:Montserrat;
+}
+.resources{
+    margin: auto;
+    width: 50%;
+    color:white;
+    border: 3px solid white;
+    padding: 10px;
+}
