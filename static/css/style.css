@@ -1,3 +1,6 @@
+body{
+  color: white;
+}
 .gradient{
 background: #3500ff; /* Old Browsers */
 background: -webkit-radial-gradient(center,#3500ff,#04083e); /*Safari 5.1-6*/
@@ -56,4 +59,5 @@ p{
 
 input {
     width: 100%;
+     display: inline-block;
 }
