@@ -3,10 +3,12 @@
 <!DOCTYPE html>
 {% if rec_center_results %}
     <ul>
+    <h4>Here are some results near {{ rec_center_results[0].CITY}}!</h4>
     {% for rec_center in rec_center_results %}
         <li>
-            <h3>{{ rec_center.NAME }}</h3>
-            <p>{{ rec_center.ZIP }}</p>
+            <h3>{{ rec_center.NAME|safe }}</h3>
+            <p>{{ rec_center.ADDRESS }}<br>
+            {{ rec_center.CITY}}, {{ rec_center.STATE}} {{ rec_center.ZIP }}</p>
         </li>
     {% endfor %}
     </ul>

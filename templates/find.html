@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block body_content %}
+    <div class="layout">
         <h1>Search</h1>
         <form action="/find" method="post">
             <input type="text" placeholder="Enter your zip code!" name="user_zipcode" required/>
             <button class="btn btn-info btn-large" type="submit">Search</button>
         </form>
         {% block results %}{% endblock %}
+    </div>
 {% endblock %}

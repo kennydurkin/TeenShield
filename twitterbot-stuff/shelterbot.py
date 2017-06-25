@@ -36,4 +36,4 @@ for shelter in shelterdata:
 		print err.message
 		print 'error posting!'
 
-	time.sleep(2.0) # wait 2 seconds before sending another tweet
+	time.sleep(30.0) # wait 2 seconds before sending another tweet
